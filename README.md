@@ -34,6 +34,17 @@ flowchart LR
     H --> I["下一个 Agent 读历史 → 接着干"]
 ```
 
+## 思路来源：渐进式披露
+
+灵感来自 Skill 的**渐进式披露（Progressive Disclosure）**：Agent 不需要一次读完所有信息——先读一份很短的索引（name + description），需要时再展开正文，用到时才去读脚本和参考资料。
+
+协作也一样：
+
+- **看板 = 索引**：一眼看清谁在做什么、哪些文件被占用；
+- **历史 = 摘要 + 指针**：每个任务只留一段摘要，细节按「详见」指针按需去读。
+
+上下文不靠一次塞满，而是**按需逐层展开**——既省 token，又不会断。
+
 ## 两个文件
 
 | 文件 | 作用 | 关键规则 |
@@ -113,8 +124,10 @@ curl -fsSL https://raw.githubusercontent.com/KAiLun-PAN/agent-board/main/install
 
 ## 局限与展望
 
-这是**现阶段**的土办法：协同依赖每个 Agent 自觉遵守规则，状态靠文件同步。
+协同依赖每个 Agent 遵守规则，状态靠文件同步。
 未来的多 Agent 协同，很可能会在 Agent 架构、甚至模型层原生共享上下文。在那之前，两个文件就够用了。
+
+觉得有用欢迎 Star ⭐，也欢迎关注作者 **KAiLoo**，分享更多 AI 技巧和方法。
 
 ## 自定义
 
@@ -124,4 +137,4 @@ curl -fsSL https://raw.githubusercontent.com/KAiLun-PAN/agent-board/main/install
 
 ## License
 
-[MIT](LICENSE) © KAiLun-PAN（凯伦）
+[MIT](LICENSE) © KAiLun-PAN（KAiLoo）

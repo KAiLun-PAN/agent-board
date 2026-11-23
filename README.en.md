@@ -32,6 +32,10 @@ flowchart LR
     H --> I["Next agent reads history → continues"]
 ```
 
+## Inspiration: progressive disclosure
+
+Borrowed from how agent **Skills** load context: read a tiny index first (name + description), open the body only when needed, read scripts/references only when used. Here, **the board is the index** and **the history is summaries + pointers** — context unfolds on demand instead of being stuffed in all at once.
+
 ## The two files
 
 | File | Purpose | Key rule |
@@ -63,7 +67,7 @@ The installer creates `BOARD.md` and `HISTORY.md` (never overwrites existing one
 
 ## Limits & outlook
 
-This is a pragmatic, **for-now** approach: it relies on agents following the rules, and state is synced through files.
+It relies on agents following the rules, and state is synced through files.
 Future multi-agent systems will likely share context natively, at the agent-architecture or even model level. Until then, two files are enough.
 
 ## License
