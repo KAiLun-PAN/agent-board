@@ -5,6 +5,8 @@
 
 [English](README.en.md) · [规则原文](templates/zh/RULE.md) · [实战示例](examples/) · [常用提示词](docs/PROMPTS.md)
 
+![Agent Board 视频预览](docs/preview.jpg)
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/KAiLun-PAN/agent-board/main/install.sh | bash
 ```

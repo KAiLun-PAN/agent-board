@@ -5,6 +5,8 @@
 
 [中文](README.md) · [Rule text](templates/en/RULE.md) · [Examples](examples/) · [Prompts](docs/PROMPTS.md)
 
+![Agent Board preview](docs/preview.jpg)
+
 ```bash
 curl -fsSL https://raw.githubusercontent.com/KAiLun-PAN/agent-board/main/install.sh | bash -s -- --lang en
 ```
